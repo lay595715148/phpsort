@@ -11,7 +11,7 @@ global $num, $arr, $min, $max;
 $arr = array();
 $num = 0;
 $min = 1;
-$max = 100;
+$max = 50;
 Debugger::debug('randnum: '.$num);
 for($i = $min; $i <= $max; $i++) {
     $arr[] = randtmp();
@@ -36,9 +36,21 @@ $ret = BubbleSort::sort($arr);
 Debugger::debug('QuickSort: 11');
 Debugger::debug('QuickSort: 000');
 $ret = CocktailShakerSort::sort($arr);
-Debugger::debug('QuickSort: 111');*/
+Debugger::debug('QuickSort: 111');
 Debugger::debug('QuickSort: 0000');
 $ret = GnomeSort::sort($arr);
 Debugger::debug('QuickSort: 1111');
+Debugger::debug('QuickSort: 00000');
+$ret = StoogeSort::sort($arr);
+Debugger::debug('QuickSort: 11111');
+Debugger::debug('QuickSort: 000000');
+$ret = SelectionSort::sort($arr);
+Debugger::debug('QuickSort: 111111');
+Debugger::debug('QuickSort: 0000000');
+$ret = InsertionSort::sort($arr);
+Debugger::debug('QuickSort: 1111111');*/
+Debugger::debug('QuickSort: 00000000');
+$ret = InsertionSort::sort($arr);
+Debugger::debug('QuickSort: 11111111');
 Debugger::debug($ret);
 ?>
