@@ -10,7 +10,9 @@ class CountingSort {
         return $arr;
     }
  
-    private static function counting($A, $B = array(),$k = 100) {
+    private static function counting($A) {
+        $k = count($A);
+        $B = array();
         $C = array();
         // 计数
         for ($j = 0; $j < count($A); $j++) {
@@ -27,7 +29,7 @@ class CountingSort {
             $B[$C[$a] - 1] = $a;
             $C[$a] -= 1;
         }
-        //ksort($B);
+        ksort($B);
         return $B;
     }
 }
